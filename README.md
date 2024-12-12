@@ -1,6 +1,6 @@
 # Ex.07 Restaurant Website
-# Date:
-# AIM:19.10.24
+# Date:19.10.24
+# AIM:
 To develop a static Restaurant website to display the food items and services provided by them.
 
 # DESIGN STEPS:
@@ -217,170 +217,7 @@ Main page
 ```
 Menu page
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Feast - Menu</title>
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background: #f8f5f0;
-            color: #333;
-        }
-
-        header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px;
-            background-color: rgba(184, 153, 112, 0.9); 
-            color: white;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-            letter-spacing: 2px;
-        }
-
-        nav {
-            position: absolute;
-            right: 30px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #f8e3c1;
-        }
-
-        .promo-banner {
-            text-align: center;
-            padding: 100px 20px;
-            background: url('ph1.jpeg') no-repeat center center;
-            background-size: cover;
-            color: white;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .promo-banner h2 {
-            font-size: 36px;
-            margin: 0;
-            font-family: 'Palatino Linotype', serif;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-        }
-
-        .promo-banner p {
-            font-size: 18px;
-            margin-top: 10px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-        }
-
-        .menu-section {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .menu-section h3 {
-            color: #6d4d33;
-            margin-bottom: 30px;
-        }
-
-        .menu-items {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .menu-item {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .menu-item img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .menu-item h4 {
-            margin: 10px 0;
-            color: #6d4d33;
-        }
-
-        .menu-item p {
-            font-size: 16px;
-            color: #555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #6d4d33;
-            color: white;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #f8e3c1;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Golden Feast</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Reservation</a></li>
-                <li><a href="#">Administration</a></li>
-                <li><a href="#">Our Story</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="promo-banner">
+ <section class="promo-banner">
         <h2>Our Menu</h2>
         <p>Explore a wide range of delicious dishes, from traditional flavors to modern culinary delights.</p>
     </section>
@@ -483,149 +320,7 @@ Menu page
 ```
 Reservation page
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Feast - Reservation</title>
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background: #f8f5f0;
-            color: #333;
-        }
-
-        header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px;
-            background-color: rgba(184, 153, 112, 0.9); 
-            color: white;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-            letter-spacing: 2px;
-        }
-
-        nav {
-            position: absolute;
-            right: 30px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #f8e3c1;
-        }
-
-        .promo-banner {
-            text-align: center;
-            padding: 100px 20px;
-            background: url('ph1.jpeg') no-repeat center center;
-            background-size: cover;
-            color: white;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .promo-banner h2 {
-            font-size: 36px;
-            margin: 0;
-            font-family: 'Palatino Linotype', serif;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-        }
-
-        .promo-banner p {
-            font-size: 18px;
-            margin-top: 10px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-        }
-
-        .reservation-info {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .reservation-info h3 {
-            color: #6d4d33;
-            margin-bottom: 20px;
-        }
-
-        .reservation-info p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #555;
-        }
-
-        .reservation-info .info-detail {
-            font-size: 16px;
-            margin: 10px 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #6d4d33;
-            color: white;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #f8e3c1;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Golden Feast</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Reservation</a></li>
-                <li><a href="#">Administration</a></li>
-                <li><a href="#">Our Story</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="promo-banner">
+ <section class="promo-banner">
         <h2>Make a Reservation</h2>
         <p>Reserve your table and enjoy a luxurious dining experience.</p>
     </section>
@@ -885,12 +580,37 @@ Reservation page
 ```
 Story
 ```
+  <section class="promo-banner">
+        <h2>Our Story</h2>
+        <p>Discover the rich history behind Golden Feast and our passion for creating unforgettable dining experiences.</p>
+    </section>
+
+    <section class="story-section">
+        <h3>Our Journey</h3>
+        <img src="ph1.jpeg" alt="Golden Feast Interior">
+        <p>Golden Feast was born from a love of food, family, and tradition. Founded in 2010, we set out to create a place where every meal is a celebration of flavors and memories.</p>
+        
+        <p>Our mission is simple: To provide an unforgettable dining experience that blends timeless recipes with modern culinary techniques. Over the years, we have become a beloved destination for locals and visitors alike.</p>
+
+        <p>Each dish is carefully crafted using the freshest ingredients, sourced from local farmers and artisans. From the moment you step through our doors, we aim to make you feel like part of the Golden Feast family.</p>
+        
+        <p>We believe that dining is more than just about the food; it’s about sharing moments, creating memories, and building lasting connections. Join us at Golden Feast, where every meal tells a story.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Golden Feast | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
+```
+css for other page
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Feast - Our Story</title>
+    <title>Golden Feast - Menu</title>
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -908,7 +628,9 @@ Story
             padding: 15px;
             background-color: rgba(184, 153, 112, 0.9); 
             color: white;
-           
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         header h1 {
@@ -968,8 +690,8 @@ Story
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
         }
 
-        .story-section {
-            max-width: 900px;
+        .menu-section {
+            max-width: 1200px;
             margin: 40px auto;
             padding: 30px;
             background-color: rgba(255, 255, 255, 0.9);
@@ -978,22 +700,41 @@ Story
             text-align: center;
         }
 
-        .story-section h3 {
+        .menu-section h3 {
             color: #6d4d33;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
-        .story-section p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #555;
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
         }
 
-        .story-section img {
-            max-width: 100%;
-            border-radius: 10px;
+        .menu-item {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            margin-bottom: 20px;
+        }
+
+        .menu-item h4 {
+            margin: 10px 0;
+            color: #6d4d33;
+        }
+
+        .menu-item p {
+            font-size: 16px;
+            color: #555;
         }
 
         footer {
@@ -1026,30 +767,6 @@ Story
             </ul>
         </nav>
     </header>
-
-    <section class="promo-banner">
-        <h2>Our Story</h2>
-        <p>Discover the rich history behind Golden Feast and our passion for creating unforgettable dining experiences.</p>
-    </section>
-
-    <section class="story-section">
-        <h3>Our Journey</h3>
-        <img src="ph1.jpeg" alt="Golden Feast Interior">
-        <p>Golden Feast was born from a love of food, family, and tradition. Founded in 2010, we set out to create a place where every meal is a celebration of flavors and memories.</p>
-        
-        <p>Our mission is simple: To provide an unforgettable dining experience that blends timeless recipes with modern culinary techniques. Over the years, we have become a beloved destination for locals and visitors alike.</p>
-
-        <p>Each dish is carefully crafted using the freshest ingredients, sourced from local farmers and artisans. From the moment you step through our doors, we aim to make you feel like part of the Golden Feast family.</p>
-        
-        <p>We believe that dining is more than just about the food; it’s about sharing moments, creating memories, and building lasting connections. Join us at Golden Feast, where every meal tells a story.</p>
-    </section>
-
-    <footer>
-        <p>© 2024 Golden Feast | <a href="#">Privacy Policy</a></p>
-    </footer>
-</body>
-</html>
-
 ```
 # OUTPUT:
 ![Screenshot 2024-12-12 183558](https://github.com/user-attachments/assets/703527a2-63ca-4099-91f8-ec2385c98c70)
